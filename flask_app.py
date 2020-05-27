@@ -25,10 +25,10 @@ db.create_all()
 
 
 @app.route('/api/funcionarios', methods=['GET', 'POST'])
- def funcionarios():
-     usuario = Apontamento(nome_usuario=)
-     db.session.add(usuario)
-     db.session.commit()
+def funcionarios():
+    usuario = Apontamento(nome_usuario=)
+    db.session.add(usuario)
+    db.session.commit()
 
 
 
