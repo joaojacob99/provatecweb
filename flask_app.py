@@ -1,34 +1,34 @@
 from flask import Flask, render_template
-from flask_sqlalchemy import SQLAlchemy
-from datetime import datetime
+#from flask_sqlalchemy import SQLAlchemy
+#from datetime import datetime
 
 app = Flask(__name__)
 
 ##### Configurar o banco de dados
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///bancoDeDados.db'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-db = SQLAlchemy(app)
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///bancoDeDados.db'
+#app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+#db = SQLAlchemy(app)
 #####
 
 ##### Criar o modelo para o registro do usuario
 # class Usuario(db.Model):
 #     codigo = 
 
-class Apontamento(db.Model):
-    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    nome_usuario = db.Column(db.String(25), nullable=True)
-   hora = db.Column(db.DateTime, default=datetime.now)
+#class Apontamento(db.Model):
+#    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+#    nome_usuario = db.Column(db.String(25), nullable=True)
+#   hora = db.Column(db.DateTime, default=datetime.now)
 
-db.create_all()
-
-
+#db.create_all()
 
 
- @app.route('/api/funcionarios', methods=['GET', 'POST'])
- def funcionarios():
-     usuario = Apontamento(nome_usuario=)
-     db.session.add(usuario)
-     db.session.commit()
+
+
+# @app.route('/api/funcionarios', methods=['GET', 'POST'])
+# def funcionarios():
+#     usuario = Apontamento(nome_usuario=)
+#     db.session.add(usuario)
+#     db.session.commit()
 
 
 
