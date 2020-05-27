@@ -1,0 +1,42 @@
+{% extends '_base.html' %}
+
+{% block title%}
+Login | Empresa
+{% endblock title%}
+
+{% block estilo%}
+<style>
+  .row{
+    height: 20em;
+    color: rgb(red);
+    font-style: italic;
+  }
+
+  .coluna{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+{% endblock estilo%}
+    
+{% block content%}
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-6 bg-white coluna">
+      <img src="static/img/html5_css3.png" alt="logo da empresa" height="200px">
+    </div>
+    <div class="col-12 col-md-6 bg-white coluna">
+      <form action="http://juliom6.pythonanywhere.com/contato" method="POST" class="text-center">
+        <h1 class="h3">Logar</h1>
+        <label for="id_email" class="sr-only">E-mail</label>
+        <input class="form-control m-2" type="email" id="id_email" placeholder="Insira seu E-mail" required autofocus name="email">
+        <label for="id_senha" class="sr-only">Senha</label>
+        <input class="form-control m-2" type="password" id="id_senha" placeholder="Insira sua senha" required name="senha">
+        <button type="submit" class="btn btn-primary">Fazer Login</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock content%}
+

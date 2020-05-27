@@ -1,0 +1,27 @@
+    {% extends '_base.html' %}
+
+    {% block estilo %}
+    <link rel="stylesheet" href="static/css/estilos_curso.css"/>
+    {% endblock estilo %}
+    
+    {% block title %}
+    Cursos
+    {% endblock title %}
+
+    {% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="nc">
+                <h1>Cursos</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div id="raiz"></div>
+        </div>
+    </div>
+    {% endblock content %}
+    
+    {% block script %}
+    <script src="static/js/script.js"></script>
+    {% endblock script %}
+    

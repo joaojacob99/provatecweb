@@ -1,0 +1,62 @@
+{% extends '_base.html' %}
+
+{% block title %}
+inicio
+{% endblock title %}
+
+{% block estilo %}
+<link rel="stylesheet" type="text/css" href="static/css/estilos_inicio.css">
+{% endblock estilo %}
+
+{% block content %}
+<div class="container d-flex justify-content-around align-items-center flex-wrap">
+  <div class="item"> <!-- Para inseriri os dados do funcionario -->
+    <!-- titulo -->
+    <div id="titulo" class="text-danger h1 p-2">EMPRESA</div>
+    <!-- formulario -->
+    <form action="/api/funcionarios" method="POST">
+      <div class="form-group">
+        <label class="text-dark h4 m-4">Nome do Usuário</label>
+        <input type="password" name="nome" class="form-control text-center" autofocus>
+      </div>
+      <div>
+        <input type="submit" name="" style="display: none;">
+      </div>
+    </form>
+    <!-- relogio -->
+    <div id="relogio"
+     class="text-dark h1">00:00:00</div>
+  </div>
+
+  <!-- Para inserir a tabela -->
+  <div class="text-white h5 item"> <!-- Para visualizar os ultimos 20 funcionarios logados -->
+    <table class="table-white table-striped">
+      <!-- cabeçalho -->
+      <thead class="text-danger">
+        <tr>
+          <th>Funcionario</th>
+          <th>Hora</th>
+        </tr>
+      </thead>
+      <!-- fim cabeçalho -->
+      <tbody id="lista">
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock content %}
+
+
+{% block script %}
+<script src="static/js/script_inicio.js"></script>
+{% endblock script %}
+
+
+    
+
+
+    
+
+
+
+ 

@@ -1,0 +1,34 @@
+h1 {
+    color: white;
+} 
+
+.h3{
+    color: black
+}
+
+.texto{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    color:cornflowerblue;
+    height: 4em;
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+.coluna{
+    display: flex;
+    align-items:center;
+    background-color:white;
+    height: 50em;
+    justify-content: center;
+}
+
+.coluna_imagem{
+    display: flex;
+    align-items: center;
+    height: 50em;
+    background-color:white;
+    justify-content: center;
+}

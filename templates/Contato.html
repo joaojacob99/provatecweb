@@ -1,0 +1,45 @@
+{% extends '_base.html' %}
+    {% block estilo %}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/estilos_contato.css">
+    {% endblock estilo%}
+    
+    {% block title %}
+    Contato | Empresa
+    {% endblock title %}
+ 
+    {% block content %}
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="texto">Fale Conosco!</h1>
+        </div>
+      </div>
+      
+      <div class="row">
+
+        <div class="col  coluna_imagem">
+          <img src="static/img/html5_css3.png" alt="logo da empresa" height="200px"></imgsrc>
+        </div>
+
+        <div class="col  coluna">
+          <form action="inicio.html" method="POST" class="text-center">
+            <h1 class="h3">Seus Dados</h1>
+            <label for="id_nome" class="sr-only">Nome:</label>
+            <input class="form-control m-2" type="text" id="id_nome" placeholder="Insira seu Nome" required autofocus name="nome">
+            <label for="id_sobrenome" class="sr-only">Sobrenome:</label>
+            <input class="form-control m-2" type="text" id="id_sobrenome" placeholder="Insira seu sobrenome" required autofocus name="sobrenome">
+            <label for="id_email" class="sr-only">E-mail</label>
+            <input class="form-control m-2" type="email" id="id_email" placeholder="Insira seu E-mail" required autofocus name="email">
+            <label for="id_assunto" class="sr-only">Senha</label>
+            <input class="form-control m-2" type="text" id="id_assunto" placeholder="Assunto" required name="assunto">
+            <label for="id_mensagem" class="sr-only">Mensagem:</label>
+            <textarea class="form-control m-2" type="text" name="mensagem" placeholder="mensagem" id="id_mensagem" cols="30" rows="10" required> </textarea>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+    {% endblock content%}
